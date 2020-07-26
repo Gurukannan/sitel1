@@ -1,4 +1,4 @@
-Corona Virus - Analytics App
+Sample Analytics App
 
 # Required Files
 1 setup.sh
