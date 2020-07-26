@@ -24,7 +24,7 @@ def main():
         ''')
         
         
-        df = pd.read_csv('E:/Sitel/sitel_csv.csv')
+        df = pd.read_csv('sitel_csv.csv')
         st.dataframe(df)
         #Trainers Vs Process Complexity (Avg AHT):
         p1= pd.pivot_table(df,values= 'AHT', columns= 'Process Complexity' , index = 'Trainer')
