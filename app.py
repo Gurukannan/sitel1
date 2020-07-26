@@ -166,13 +166,13 @@ def main():
         st.write('Progress bar')
         import time
         my_bar = st.progress(0)
-        for percent_complete in range(100):
+        for percent_complete in range(3):
             time.sleep(0.1)
             my_bar.progress(percent_complete + 1)
 
         st.write('Spinner')
         with st.spinner('Wait for it'):
-            time.sleep(5)
+            time.sleep(1)
         st.success('Done!')
         
         st.balloons()
@@ -196,7 +196,9 @@ def main():
         my_table.add_rows(df2)
        
         my_chart = st.line_chart(df1)
-        my_chart.add_rows(df2)    
+        my_chart.add_rows(df2)
+        
+        
         
 	
 if __name__ == '__main__':
